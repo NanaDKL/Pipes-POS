@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLoginForm_1920));
             panel1 = new Panel();
             panel2 = new Panel();
+            label4 = new Label();
+            pictureBox3 = new PictureBox();
             panel3 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -48,6 +50,7 @@
             txtEmail = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -66,16 +69,38 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.WhiteSmoke;
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(panel3);
             panel2.Location = new Point(349, 217);
             panel2.Name = "panel2";
             panel2.Size = new Size(1222, 597);
             panel2.TabIndex = 0;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(13, 341);
+            label4.Name = "label4";
+            label4.Size = new Size(181, 40);
+            label4.TabIndex = 6;
+            label4.Text = "Point Of Sale";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(13, 183);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(150, 150);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
             // panel3
             // 
-            panel3.BackColor = Color.White;
+            panel3.BackColor = Color.WhiteSmoke;
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(checkBox1);
@@ -180,6 +205,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.BackColor = Color.WhiteSmoke;
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPassword.Location = new Point(48, 13);
@@ -231,6 +257,7 @@
             // 
             // txtEmail
             // 
+            txtEmail.BackColor = Color.WhiteSmoke;
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEmail.Location = new Point(48, 13);
@@ -246,6 +273,8 @@
             Size = new Size(1920, 1030);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel5.ResumeLayout(false);
@@ -276,5 +305,7 @@
         private CheckBox checkBox1;
         private Label label3;
         private Label label2;
+        private Label label4;
+        private PictureBox pictureBox3;
     }
 }

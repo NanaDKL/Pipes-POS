@@ -30,11 +30,13 @@
         {
             panel1 = new Panel();
             label1 = new Label();
+            formStockManagement_Doodle1 = new formStockManagement_Doodle();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(formStockManagement_Doodle1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
@@ -52,6 +54,14 @@
             label1.TabIndex = 2;
             label1.Text = "Stock Management";
             // 
+            // formStockManagement_Doodle1
+            // 
+            formStockManagement_Doodle1.BackColor = Color.White;
+            formStockManagement_Doodle1.Location = new Point(27, 85);
+            formStockManagement_Doodle1.Name = "formStockManagement_Doodle1";
+            formStockManagement_Doodle1.Size = new Size(1666, 919);
+            formStockManagement_Doodle1.TabIndex = 3;
+            // 
             // formStockManagement
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -67,5 +77,6 @@
 
         private Panel panel1;
         private Label label1;
+        private formStockManagement_Doodle formStockManagement_Doodle1;
     }
 }
